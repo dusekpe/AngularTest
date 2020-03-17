@@ -6,8 +6,8 @@ import { DashboardComponent } from 'src/app/modules/dashboard/dashboard.componen
 import { SharedModule } from 'src/app/shared/shared.module';
 import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
-
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   imports: [
     CommonModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    MatSidenavModule,
+    MatDividerModule
   ]
 })
 export class DefaultModule { }

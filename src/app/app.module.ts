@@ -6,8 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-modules';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+
 import { DefaultModule } from './layouts/default/default.module';
+import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
 
 
 @NgModule({
@@ -22,7 +26,9 @@ import { DefaultModule } from './layouts/default/default.module';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    DefaultModule
+    DefaultModule,
+    GridModule, PagerModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
