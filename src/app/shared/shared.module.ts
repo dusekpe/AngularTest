@@ -11,12 +11,15 @@ import { FlexLayoutModule} from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { BasicComponent } from './widgets/basic/basic.component';
+import { ChartModule, LineSeriesService, CategoryService, DateTimeService } from '@syncfusion/ej2-angular-charts';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    BasicComponent
   ],
   imports: [
     CommonModule,
@@ -27,12 +30,19 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    ChartModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    BasicComponent
+  ],
+  providers: [
+    LineSeriesService,
+    CategoryService,
+    DateTimeService
   ]
 })
 export class SharedModule { }

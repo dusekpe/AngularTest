@@ -12,8 +12,6 @@ import { DefaultModule } from './layouts/default/default.module';
 import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
-
-
 @NgModule({
   declarations: [
     AppComponent
