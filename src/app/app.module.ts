@@ -11,10 +11,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { DefaultModule } from './layouts/default/default.module';
 import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { ArticlesComponent } from './modules/articles/articles.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,

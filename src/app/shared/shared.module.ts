@@ -31,13 +31,15 @@ import { ChartModule, LineSeriesService, CategoryService, DateTimeService } from
     MatMenuModule,
     MatListModule,
     RouterModule,
-    ChartModule
+    ChartModule,
+    MatListModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    BasicComponent
+    BasicComponent,
+    MatListModule
   ],
   providers: [
     LineSeriesService,
