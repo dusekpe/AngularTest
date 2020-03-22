@@ -28,7 +28,8 @@ import { ArticlesComponent } from './modules/articles/articles.component';
     HttpClientModule,
     DefaultModule,
     GridModule, PagerModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

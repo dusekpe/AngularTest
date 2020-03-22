@@ -4,3 +4,8 @@
     <e-series [dataSource]='data' type='Line' xName='x' yName='y' name='Germany' width=2> </e-series>
   </e-series-collection>
 </ejs-chart>
+
+
+<li *ngFor="let item of values">
+  {{item.date}}, {{item.temperatureC}}
+</li>
