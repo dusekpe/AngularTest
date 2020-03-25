@@ -34,7 +34,7 @@ export class BasicComponent implements OnInit {
   }
 
   getValues() {
-    this.http.get('http://localhost:5000/WeatherForecast').subscribe(response => {
+    this.http.get('https://vstestapi20200324201905.azurewebsites.net/WeatherForecast').subscribe(response => {
       this.values = response;
     }, error => {
       console.log(error);
@@ -42,3 +42,5 @@ export class BasicComponent implements OnInit {
   }
 
 }
+//http://localhost:5000/WeatherForecast
+//https://vstestapi20200324201905.azurewebsites.net/WeatherForecast

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "dist\\AngularTest",
+    "appService.defaultWebAppToDeploy": "/subscriptions/78cea71b-b9a2-4dad-a996-d12de55a336f/resourceGroups/Free-WestEU/providers/Microsoft.Web/sites/pduFirstPage"
+}
